@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DATABASE</title>
+</head>
+<body style="background-color: rgb(240, 228, 213);">
+    <h1 style="text-align: center; font-family:Courier New;">WELCOME TO YOUR DATABASE</h1>
+
+
+    <table style="margin-left:auto;margin-right:auto; text-align:center;width:80%; border:2px solid black;">
+        <tr style="font-size: 30px; font-family:'Monospace';">
+            <th style="padding:10px;">Drug Name</th>
+            <th style="padding:10px;">Quantity</th>
+            <th style="padding:10px;">Price</th>
+            <th style="margin-left:40px;">Action</th>
+        </tr>
+        {%for drug in drugs%}
+        <tr style="background-color: rgba(233, 196, 196, 0.698); height:50px; font-size:20px; text-decoration:none;">
+            <td>{{drug.dname}}</td>
+            <td>{{drug.dno}}</td>
+            <td>{{drug.dprice}}</td>
+            <td><a href="/editdrug/{{drug.id}}" style="text-decoration: none; border: 1px solid black; border-radius:3px; color:rgb(54, 53, 53); width:20px; background-color:rgb(250, 120, 120); padding:9px;">Edit</a></td>
+            <td><a href="/delete/{{drug.id}}" style="border-radius:3px; border:1px solid black; text-decoration:none; color:rgb(56, 54, 54); width:20px; background-color:rgb(130, 243, 130); padding:9px;">Delete</a> </td>
+            <td><a href="/selldrug/{{drug.id}}" style="border-radius:3px; border:1px solid black; text-decoration:none; color:rgb(56, 54, 54); width:20px; background-color:rgb(185, 165, 109); padding:9px;">Sell Drug</a></td>
+         
+        </tr>
+        {%endfor%}
+    </table>
+</body>
+
+</html>
+
+
+
+
+
+

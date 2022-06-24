@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+    <title>Edit Database</title>
+</head>
+<body style="background-color: antiquewhite;"id = "add">
+    <h1 style="text-align:center; font-family:Courier New; font-size: 50px; margin-top:120px; color:black; background-color: rgba(241, 229, 229, 0.985);align-content: center;
+    justify-content: center;padding:15px;outline-style: solid;outline-color:rgba(50, 22, 11, 0.891);margin-left: 320px; margin-right: 250px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">EDIT DATABASE 🚮</h1>
+    <div style="margin-left: 500px; margin-top:250px;">
+        <form action="/editdrug/{{drug.id}}" method="post">
+            <input type="text" placeholder="Drug Name" name="dname" value="{{drug.dname}}" style="height: 50px; width:250px;border-radius:10px; font-size:17px; text-align:center; margin-left: 25px;">
+            <input type="text" placeholder="Enter New quantity" name="dno" value="{{drug.dno}}"style="height: 50px; width:250px;border-radius:10px; font-size:17px; text-align:center; margin-left: 25px;">
+            <input type="text" placeholder="Enter New Price" name="dprice" value="{{drug.dprice}}"style="height: 50px; width:250px;border-radius:10px; font-size:17px; text-align:center; margin-left: 25px;">
+            <input type="submit" value="update"style="height:50px; width:90px;border-radius:10px; font-size:17px; text-align:center; margin-left:80px;">
+        </form>
+    </div>
+
+        
+
+    
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+    <title>Register Drugs</title>
+</head>
+
+<body style="background-color: rgb(183, 230, 139); " id="ädd">
+    
+    <h1 style="text-align: center;font-family:Courier New; margin-top:150px;color:black;background-color: rgba(241, 229, 229, 0.985);align-content: center;
+    justify-content: center;padding:15px;outline-style: solid;outline-color:tomato;margin-left: 320px;margin-right: 300px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">📝 REGISTER NEW DRUGS TO DATABASE </h1>
+    <form action="/drugslist" method="post">
+    <div style= "width: auto; height: auto; align-content: center; align-self: center; margin-top: 120px; margin-right: 100px; margin-left:200px; background-color: rgba(221, 198, 198, 0.767); height:350px; border-radius: 10px; padding-top: 8px; padding-left: 10px; padding-bottom: 8px;">
+        <label name="dname" style="font-size: 25px; margin-top:600px; margin-left:25px; color: rgb(10, 8, 8);">Drug Name:
+            <input type="text" name="dname" style="height: 45px; width:300px;border-radius:10px; font-size:19px; text-align:center;margin-top:120px; ">
+        </label>
+        <label name="dno" style="font-size:25px; margin-left:10px; color: rgb(24, 20, 20);">Amount to Stock:
+            <input type="text" name="dno" style="height: 45px; width:300px;border-radius:10px; font-size:19px; text-align:center; margin-top:120px;">
+        </label>
+        <label name="dprice" style="font-size:25px; margin-left:10px; color: rgb(27, 21, 21)"> Enter Drug Price: 
+            <input type="text" name="dprice" style="height: 45px; width:300px;border-radius:10px; text-align:center; margin-top:70px; font-size: 19px;">
+        </label>
+        
+        <input type="submit" style="height: 55px; width:150px;border-radius:10px; font-size:26px; text-align:center; margin-left: 750px; margin-top: 100px;">
+    </div>
+    </form>
+    
+</body>
+
+</html>

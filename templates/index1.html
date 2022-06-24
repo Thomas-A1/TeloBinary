@@ -1,0 +1,50 @@
+<!Doctype html>
+
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>TeloBinary</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+        <header><span>Telo</span>Binary</header>
+        <ul>
+            <li><a href="{{url_for('drugslist')}}" target='_blank'></i>🎲 Database</a></li>
+            <li><a href="#"></i>💵 Sales Report</a></li>
+            <li><a href="#"></i>📳 Suppliers </a></li>
+            <li><a href="{{url_for('adddrug')}}"></i>✍ Register Drugs </a></li>
+            <li><a href="#"></i>➕ Restock Drugs</a></li>
+            <li><a href="#"></i>🛄 Sell Drugs</a></li>
+            <li><a href="#"></i>❓ About</a></li>
+        </ul>
+    </div>
+    
+    <section>
+        <div class="flex-container">
+            
+            <div class="flex-box">
+                <a href="{{url_for('adddrug')}}" target='_blank'></i>📝 REGISTER DRUGS</a>
+            </div>  
+            <div class="flex-box">
+                <a href="{{url_for('drugslist')}}" target='_blank'></i>🎲 DATABASE</a>
+            </div>
+            <div class="flex-box">
+                <a href="{{url_for('suppliers')}}" target='_blank'></i>📳 SUPPLIERS</a>
+            </div>
+        </div>
+    </section>
+    
+        
+    
+</body>
+
+</html>
